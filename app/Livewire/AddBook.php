@@ -4,12 +4,19 @@ namespace App\Livewire;
 
 use Livewire\Component;
 use App\Models\Books;
+use Livewire\Attributes\Rule;
 
 class AddBook extends Component
 {
-    public $title, $author, $publication_year;
+    public $title;
+
+    public $author;
+
+    public $publication_year;
 
     public function save(){
+
+
         Books::create([
             'title' => $this->title,
             'author' => $this->author,

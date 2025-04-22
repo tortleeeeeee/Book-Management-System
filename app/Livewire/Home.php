@@ -15,7 +15,7 @@ class Home extends Component
 
     public $titleSearch = '';
 
-    public function delete($id)
+    public function delete($id, $title)
     {
         $book = Books::find($id);
         $book->delete();
