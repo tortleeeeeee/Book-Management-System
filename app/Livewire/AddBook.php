@@ -16,7 +16,7 @@ class AddBook extends Component
             'publication_year' => $this->publication_year,
         ]);
 
-        $this->redirect('/');
+        return redirect('/')->with('addSuccess', 'Book added successfully!');
     }
     public function render()
     {

@@ -26,7 +26,7 @@ class EditBook extends Component
             'author' => $this->author,
             'publication_year' => $this->publication_year,
         ]);
-        return redirect()->route('home');
+        return redirect()->route('home')->with('updateSuccess', 'Book updated successfully!');
     }
     public function render()
     {

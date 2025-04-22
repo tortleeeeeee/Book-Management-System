@@ -19,6 +19,7 @@ class Home extends Component
     {
         $book = Books::find($id);
         $book->delete();
+        return redirect()->with('success', 'Book deleted successfully!');
     }
 
     #[Title('Homepage')]
