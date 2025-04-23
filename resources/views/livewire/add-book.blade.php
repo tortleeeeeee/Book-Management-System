@@ -13,7 +13,7 @@
         </div>
         <div class="form-group mt-2">
           <b><label>Year</label></b>
-          <input class="form-control" type="number" min="1900" max="2100" wire:model="publication_year" placeholder="Year" required>
+          <input class="form-control" type="number" min="1800" max="2100" wire:model="publication_year" placeholder="Year" required>
         </div>
         <button type="submit" class="btn btn-primary mt-2">SUBMIT</button>
       </form>

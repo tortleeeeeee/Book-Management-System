@@ -15,11 +15,11 @@ class Home extends Component
 
     public $titleSearch = '';
 
-    public function delete($id, $title)
+    public function delete($id)
     {
         $book = Books::find($id);
         $book->delete();
-        return redirect()->with('success', 'Book deleted successfully!');
+        return redirect('/')->with('success', 'Book deleted successfully!');
     }
 
     #[Title('Homepage')]

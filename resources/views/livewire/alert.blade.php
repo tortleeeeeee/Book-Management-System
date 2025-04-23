@@ -22,7 +22,7 @@
         </div>
     @endif
 
-    <script>
+    <script type="text/javascript">
         $(".alert").alert('close')
     </script>
 </div>

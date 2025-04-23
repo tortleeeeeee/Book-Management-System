@@ -4,7 +4,6 @@ namespace App\Livewire;
 
 use Livewire\Component;
 use App\Models\Books;
-use Livewire\Attributes\Rule;
 
 class AddBook extends Component
 {
